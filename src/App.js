@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './component/Logo';
+import {menuData, menuIcon} from './data';
+import MenuNavBar from './component/MenuNav';
+import MenuSocial from './component/MenuSocial'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className='header-container'>
+      <nav className="main-nav-container">
+        <Logo />
+        <MenuNavBar data={menuData} />
+        <MenuSocial data={menuIcon} />
+      </nav>
+    </header>
+
+    
   );
 }
 
