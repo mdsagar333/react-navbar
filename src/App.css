@@ -16,13 +16,19 @@
   align-items: center;
 }
 
+.menu-nav {
+  height: auto;
+}
+
 .menu-nav ul {
   display: flex;
+  padding: 0px;
 }
 
 .menu-nav ul li {
   list-style-type: none;
   padding: 8px;
+  transition: .3s all;
 }
 
 .menu-nav ul li > a {
@@ -30,7 +36,7 @@
   color: #324D67;
   letter-spacing: 2px;
   text-transform: capitalize;
-  transition: 0.4s color;
+  transition: 0.3s color;
   font-size: 1rem;
 }
 
@@ -41,6 +47,7 @@
 
 .social-menu ul {
   display: flex;
+  padding: 0px;
 }
 
 .social-menu ul li {
@@ -59,4 +66,67 @@
 
 .social-menu ul li > a:hover {
   color: #A7D8FA;
+}
+.bar-container {
+  display: none;
+}
+
+.bar-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #49A6E9;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.6s all ease-in;
+}
+
+.bar-btn:hover {
+  transform: rotate(90deg);
+  color: #254C67;
+}
+
+
+@media screen and (max-width: 850px) {
+  .main-nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bar-container {
+    display: block;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+}
+
+.menu-nav ul {
+  display: flex;
+  padding: 20px 0;
+  flex-direction: column;
+  width: 95vw;
+  margin: 0;
+}
+
+  .menu-nav ul li:hover {
+    color: #49A6ED;
+    background-color: #A5D5F8;
+    padding: 8px 0px 8px 16px;
+    border-radius: 4px;
+}
+
+  .social-menu {
+    display: none;
+  }
+
+  .menu-nav {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s height;
+}
 }

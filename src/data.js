@@ -6,22 +6,22 @@ export const menuData = [
         text:'Home'
     },
     {
-        id:1,
+        id:2,
         url: '/About',
         text:'About'
     },
     {
-        id:1,
+        id:3,
         url: '/Projects',
         text:'Projects'
     },
     {
-        id:1,
+        id:4,
         url: '/Contact',
         text:'Contact'
     },
     {
-        id:1,
+        id:5,
         url: '/Profile',
         text:'Profile'
     }
